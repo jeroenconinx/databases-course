@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="385.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.dbproject.controller.ToonBezoekenController">
+    <children>
+        <TableView fx:id="bezoekTableView" layoutX="14.0" layoutY="59.0" prefHeight="182.0" prefWidth="749.0">
+            <columns>
+                <TableColumn fx:id="idBezoekTableColumn" prefWidth="32.200011253356934" text="ID" />
+                <TableColumn fx:id="naamBezoekerTableColumn" prefWidth="254.0" text="Naam bezoeker" />
+                <TableColumn fx:id="bijdrageBezoekTableColumn" prefWidth="82.0" text="Bijdrage" />
+                <TableColumn fx:id="betaalmethodeBezoekTableColumn" minWidth="8.39996337890625" prefWidth="104.0" text="Betaalmethode" />
+                <TableColumn fx:id="museumBezoekTableColumn" prefWidth="89.0" text="Museum" />
+            </columns>
+        </TableView>
+        <Text layoutX="16.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="De bezoeken aan de musea zijn:" wrappingWidth="567.21875">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane xmlns:fx="http://javafx.com/fxml" fx:controller="be.kuleuven.dbproject.controller.museaMedewerkerController" fx:id="tabPane">
+    <tabs>
+        <!-- Eerste tab met naam "museau" -->
+        <Tab text="Museau" closable="false" fx:id="museauTab">
+            <!-- Verwijzing naar een bestaand FXML-bestand voor de inhoud van de tab -->
+            <content>
+                <fx:include source="MuseaData.fxml"/>
+            </content>
+        </Tab>
+
+        <!-- Tweede tab met naam "medewerker" -->
+        <Tab text="Medewerkers" closable="false" fx:id="medewerkersTab">
+            <!-- Verwijzing naar een bestaand FXML-bestand voor de inhoud van de tab -->
+            <content>
+                <fx:include source="MedewerkersData.fxml"/>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
+

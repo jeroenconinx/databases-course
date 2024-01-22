@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="295.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.dbproject.controller.LogInBezoekerController">
+    <children>
+        <Text layoutX="43.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Geef ID en e-mailadres in aub" textAlignment="CENTER" wrappingWidth="312.03125">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtEmail" layoutX="125.0" layoutY="142.0" promptText="Email Address" />
+
+        <!-- Centering the buttons horizontally -->
+        <Button fx:id="btnLogin" layoutX="151.0" layoutY="186.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="113.0" text="Log in" />
+      <TextField fx:id="textID" layoutX="125.0" layoutY="102.0" promptText="ID" />
+      <Button fx:id="btnRegistreer" layoutX="51.0" layoutY="238.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="312.0" text="Geen bestaande bezoeker? Registreer!" />
+    </children>
+</AnchorPane>

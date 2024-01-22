@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="316.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.dbproject.controller.ToonGamesController">
+    <children>
+        <Button fx:id="btnAddGame" layoutX="22.0" layoutY="275.0" mnemonicParsing="false" text="Voeg toe" />
+        <Button fx:id="btnDeleteGame" layoutX="106.0" layoutY="275.0" mnemonicParsing="false" text="Verwijder" />
+        <TextField fx:id="zoekGameTextBar" layoutX="14.0" layoutY="37.0" prefHeight="25.0" prefWidth="426.0" promptText="Zoek naar game" />
+        <TableView fx:id="gameTableView" layoutX="16.0" layoutY="74.0" prefHeight="182.0" prefWidth="753.0">
+            <columns>
+                <TableColumn fx:id="idGameTableColumn" prefWidth="32.200011253356934" text="ID" />
+                <TableColumn fx:id="naamGameTableColumn" prefWidth="186.4000015258789" text="Naam" />
+                <TableColumn fx:id="developerGameTableColumn" prefWidth="141.60000610351562" text="Developer" />
+                <TableColumn fx:id="publicatiejaarBookTableColumn" minWidth="8.39996337890625" prefWidth="53.199981689453125" text="Jaar" />
+                <TableColumn fx:id="consoleBookTableColumn" prefWidth="146.0" text="Console" />
+                <TableColumn fx:id="uitgeleendBookTableColumn" prefWidth="75.00003051757812" text="Uitgeleend" />
+            </columns>
+        </TableView>
+        <Text layoutX="16.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="De games in het geselecteerde museum:" wrappingWidth="567.21875">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

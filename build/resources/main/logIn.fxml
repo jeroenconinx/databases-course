@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="254.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.dbproject.controller.LogInController">
+   <children>
+      <Text layoutX="50.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="312.03125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtEmail" layoutX="117.0" layoutY="69.0" promptText="Email Address" />
+      <PasswordField fx:id="txtPassword" layoutX="117.0" layoutY="115.0" promptText="Password" />
+
+      <!-- Centering the buttons horizontally -->
+      <Button fx:id="btnLogin" layoutX="148.0" layoutY="173.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="111.0" text="Log in" />
+   </children>
+</AnchorPane>

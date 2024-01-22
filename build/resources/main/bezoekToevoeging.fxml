@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="884.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.dbproject.controller.bezoekToevoegingController">
+    <children>
+        <Text layoutX="249.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uw winkelwagen" textAlignment="CENTER" wrappingWidth="315.03125">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Button fx:id="btnSlaBezoekOp" layoutX="524.0" layoutY="78.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="278.0" text="Betaal en Registreer mijn bezoek" />
+      <ComboBox fx:id="selecteerBetaalmethode" layoutX="50.0" layoutY="90.0" onAction="#selecteerBetaalmethode" prefHeight="26.0" prefWidth="189.0" promptText="Selecteer betaalmethode" />
+      <TableView fx:id="boekTableView" layoutX="51.0" layoutY="183.0" prefHeight="122.0" prefWidth="753.0">
+        <columns>
+            <TableColumn fx:id="idBookTableColumn" prefWidth="32.200011253356934" text="ID" />
+            <TableColumn fx:id="naamBookTableColumn" prefWidth="186.4000015258789" text="Naam" />
+            <TableColumn fx:id="auteurBookTableColumn" prefWidth="141.60000610351562" text="Auteur" />
+            <TableColumn fx:id="publicatiejaarBookTableColumn" minWidth="8.39996337890625" prefWidth="53.199981689453125" text="Jaar" />
+            <TableColumn fx:id="uitgeverBookTableColumn" prefWidth="146.0" text="Uitgever" />
+            <TableColumn fx:id="uitgeleendBookTableColumn" prefWidth="75.00003051757812" text="Uitgeleend" />
+        </columns>
+      </TableView>
+      <TextField fx:id="zoekBoekTextBar" layoutX="51.0" layoutY="151.0" promptText="Zoek naar boek" />
+      <TableView fx:id="gameTableView" layoutX="51.0" layoutY="380.0" prefHeight="171.0" prefWidth="753.0">
+          <columns>
+              <TableColumn fx:id="idGameTableColumn" prefWidth="32.200011253356934" text="ID" />
+              <TableColumn fx:id="naamGameTableColumn" prefWidth="186.4000015258789" text="Naam" />
+              <TableColumn fx:id="auteurGameTableColumn" prefWidth="141.60000610351562" text="Developer" />
+              <TableColumn fx:id="publicatiejaarGameTableColumn" minWidth="8.39996337890625" prefWidth="53.199981689453125" text="Jaar" />
+              <TableColumn fx:id="uitgeverGameTableColumn" prefWidth="146.0" text="Console" />
+              <TableColumn fx:id="uitgeleendGameTableColumn" prefWidth="75.00003051757812" text="Uitgeleend" />
+          </columns>
+      </TableView>
+
+        <TableView fx:id="winkelwagenTableView" layoutX="51.0" layoutY="604.0" prefHeight="185.0" prefWidth="753.0">
+            <columns>
+                <TableColumn fx:id="idItem" prefWidth="32.200011253356934" text="ID" />
+                <TableColumn fx:id="naamItem" prefWidth="186.4000015258789" text="Naam" />
+                <TableColumn fx:id="typeItem" prefWidth="141.60000610351562" text="Type" />
+            </columns>
+        </TableView>
+
+      <TextField fx:id="zoekGameTextBar" layoutX="50.0" layoutY="345.0" promptText="Zoek naar game" />
+      <TextField fx:id="teBetalenBedrag" layoutX="50.0" layoutY="60.0" prefHeight="25.0" prefWidth="189.0" promptText="Bedrag vrijblijvende bijdrage" />
+      <Button fx:id="btnVoegBoek" layoutX="249.0" layoutY="151.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="243.0" text="Voeg boek aan winkel wagen toe" />
+      <Button fx:id="btnVoegGame" layoutX="247.0" layoutY="345.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="243.0" text="Voeg game aan winkelwagen toe" />
+      <Button fx:id="btnReturnBoek" layoutX="533.0" layoutY="151.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="269.0" text="Return geselecteerd boek" />
+      <Button fx:id="btnReturnGame" layoutX="536.0" layoutY="345.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="269.0" text="Return geselecteerde game" />
+      <Button fx:id="btnLogUit" layoutX="711.0" layoutY="36.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="91.0" text="Log uit" />
+      <Button fx:id="btnDeleteItem" layoutX="439.0" layoutY="809.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="363.0" text="Verwijder het geselecteerde item uit het winkelwagen" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="270.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.dbproject.controller.BoekToevoegingController">
+    <children>
+        <Text layoutX="50.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Geef de gegevens van het toe te voegen boek in" textAlignment="CENTER" wrappingWidth="312.03125">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="naamField" layoutX="50.0" layoutY="52.0" promptText="Naam" />
+        <TextField fx:id="auteurField" layoutX="50.0" layoutY="85.0" promptText="Auteur" />
+
+        <!-- Centering the button horizontally -->
+        <Button fx:id="btnVoegToe" layoutX="266.0" layoutY="114.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="120.0" text="Voeg Toe" />
+      <TextField fx:id="jaarField" layoutX="50.0" layoutY="120.0" promptText="Publicatiejaar" />
+      <TextField fx:id="uitgeverField" layoutX="50.0" layoutY="157.0" promptText="Uitgever" />
+      <TextField fx:id="waardeField" layoutX="50.0" layoutY="194.0" promptText="Waarde" />
+    </children>
+</AnchorPane>

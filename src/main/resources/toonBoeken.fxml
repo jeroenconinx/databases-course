@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="332.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.dbproject.controller.ToonBoekenController">
+    <children>
+
+        <TextField fx:id="zoekBoekTextBar" layoutX="16.0" layoutY="41.0" prefHeight="25.0" prefWidth="658.0" promptText="Zoek naar boek" />
+        <TableView fx:id="boekTableView" layoutX="16.0" layoutY="92.0" prefHeight="182.0" prefWidth="753.0">
+            <columns>
+                <TableColumn fx:id="idBookTableColumn" prefWidth="32.200011253356934" text="ID" />
+                <TableColumn fx:id="naamBookTableColumn" prefWidth="186.4000015258789" text="Naam" />
+                <TableColumn fx:id="auteurBookTableColumn" prefWidth="141.60000610351562" text="Auteur" />
+                <TableColumn fx:id="publicatiejaarBookTableColumn" minWidth="8.39996337890625" prefWidth="53.199981689453125" text="Jaar" />
+                <TableColumn fx:id="uitgeverBookTableColumn" prefWidth="146.0" text="Uitgever" />
+                <TableColumn fx:id="uitgeleendBookTableColumn" prefWidth="75.00003051757812" text="Uitgeleend" />
+            </columns>
+        </TableView>
+        <Text layoutX="16.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="De boeken in het geselecteerde museum:" wrappingWidth="567.21875">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Text>
+      <Button fx:id="btnAddBook" layoutX="30.0" layoutY="287.0" mnemonicParsing="false" text="Voeg toe" />
+      <Button fx:id="btnDeleteBook" layoutX="121.0" layoutY="287.0" mnemonicParsing="false" text="Verwijder" />
+    </children>
+</AnchorPane>

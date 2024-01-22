@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="385.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.dbproject.controller.ToonMedewerkersController">
+    <children>
+        <TableView fx:id="tblConfigs" layoutX="14.0" layoutY="47.0" prefHeight="220.0" prefWidth="360.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+            </columns>
+        </TableView>
+        <Text layoutX="16.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="De medewerkers van het geselecteerde museum:" wrappingWidth="567.21875">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

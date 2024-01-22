@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.dbproject.controller.ToevoegingBezoekerController">
+    <children>
+        <Text layoutX="50.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registreer uw gegevens" textAlignment="CENTER" wrappingWidth="300.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtNaam" layoutX="50.0" layoutY="69.0" promptText="Naam" />
+        <TextField fx:id="txtEmail" layoutX="50.0" layoutY="99.0" promptText="Email" />
+        <TextField fx:id="txtadres" layoutX="50.0" layoutY="129.0" promptText="Adres" />
+
+        <!-- DatePicker for choosing the date of birth -->
+        <DatePicker fx:id="dpGeboortedatum" layoutX="50.0" layoutY="159.0" promptText="Geboortedatum" />
+
+
+        <!-- Centering the button horizontally -->
+        <Button fx:id="btnRegistreer" layoutX="52.0" layoutY="223.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="288.0" text="Voeg Toe" />
+    </children>
+</AnchorPane>

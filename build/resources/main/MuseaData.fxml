@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="410.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.dbproject.controller.MuseaDataController">
+   <children>
+      <TableView fx:id="tblConfigs" layoutX="14.0" layoutY="47.0" prefHeight="246.0" prefWidth="758.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Text layoutX="16.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beheer gegevens van de musea" wrappingWidth="567.21875">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAdd" layoutX="16.0" layoutY="300.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="205.0" text="Voeg museum toe" />
+      <Button fx:id="btnClose" layoutX="630.0" layoutY="330.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="137.0" text="Sluiten" />
+      <Button fx:id="btnDelete" layoutX="16.0" layoutY="330.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="205.0" text="Verwijder museum" />
+       <Button fx:id="btnToonMedewerkers" layoutX="275.0" layoutY="300.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" text="Toon Medewerkers" />
+       <Button fx:id="btnVoegMedewerkerToe" layoutX="16.0" layoutY="376.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="205.0" text="Voeg een medewerker toe" />
+       <Button fx:id="btnRegistreerBezoek" layoutX="630.0" layoutY="300.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" text="Registreer bezoek" />
+      <Button fx:id="btnToonGames" layoutX="427.0" layoutY="330.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" text="Toon Games" />
+      <Button fx:id="btnToonBoeken" layoutX="275.0" layoutY="330.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="142.0" text="Toon Boeken" />
+      <Button fx:id="btnToonBezoeken" layoutX="427.0" layoutY="300.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" text="Toon Bezoeken" />
+   </children>
+</AnchorPane>
